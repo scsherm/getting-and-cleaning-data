@@ -8,4 +8,4 @@ A few assumptions are made in order to insure the R script will work on         
 3. You have loaded both packages into R.
 4. Your working directory is set to the location of the UCI HAR Dataset.               
         
-Finally, the R script can be run by executing ```source("run_analysis.R") ``` in R as long as the script is saved in your working directory.
+Finally, the R script can be run by executing ```source("run_analysis.R") ``` in R, as long as the script is saved in your working directory.
