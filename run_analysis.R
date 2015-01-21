@@ -40,6 +40,8 @@ trainData <- cbind(as.data.table(subjectTrain), ytrain, xtrain)
 dt = rbind(testData, trainData)
 
 # Clean up merged data and create a tidy dataset as text file. 
-dt2 = melt(dt, id = c("Subject", "ID", "Activity"), measure.vars = setdiff(colnames(dt), c("Subject", "ID", "Activity")))
+id <- c("Subject", "ID", "Activity")
+variables <- setdiff(colnames(dt), id)
+dt2 <- melt(dt, id = id, measure.vars = variables)
 TidyData <- dcast(dt2, Subject + Activity ~ variable, mean)
-write.table(TidyData, file = "./TidyData.txt", sep = "")
+write.table(TidyData, file = "./TidyData.txt")
