@@ -42,5 +42,5 @@ The UCI HAR Dataset included the folowing files:
 
 ## Cleaning Up Data and Variable Names
 
-The features.txt files are used to name the variables of the xtest and xtrain data. The ytrain and ytest data variables are labeled Activity and ID. The Activity represents one of the six performed activities described earlier.  The ID is an associated number for each activty (1-6).  The variable name applied to the subject file is simply "Subject", as it represents the one of the thirty participants who performed the activities.  After these files are appropriately named, the data regarding the mean and standard deviation is extracted.  This data is then merged into one dataset and stored as a text file ('TidyData.txt').
+The features.txt files are used to name the variables of the xtest and xtrain data. The ytrain and ytest data variables are labeled Activity and ID. The Activity represents one of the six performed activities described earlier.  The ID is an associated number for each activty (1-6).  The variable name applied to the subject file is simply "Subject", as it represents the one of the thirty participants who performed the activities.  After these files are appropriately named, the data regarding the mean and standard deviation is extracted.  This data is then merged into one clean dataset and stored as a text file ('TidyData.txt').
 
